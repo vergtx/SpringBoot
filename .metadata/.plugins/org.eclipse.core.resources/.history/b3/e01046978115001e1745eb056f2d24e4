@@ -1,0 +1,35 @@
+package edu.pnu.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.web.SecurityFilterChain;
+
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig {
+	// 이페이지는 시큐리티 기본 말고 커스터마이징 하겠다는 이야기
+	@Bean
+	public SecurityFilterChain filterChain(HttpSecurity security) throws Exception {
+		
+		security.authorizeHttpRequests(auth -> {
+	
+			auth.requestMatchers("/").permitAll()
+				.requestMatchers("/member/**").authenticated()
+				.requestMatchers("/memager/**").hasAnyRole("MANAGER", "ADMIN")
+				.requestMatchers("/admin/**").hasRole("ADMINN")
+				.anyRequest().permitAll();
+		});
+		
+		security.csrf(csrf->csrf.disable());
+		security.formLogin(form->{
+			form.loginPage("/login")
+				.defaultSuccessUrl("/");
+		}); 
+		
+		return security.build();
+						
+	}
+	
+}

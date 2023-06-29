@@ -1,0 +1,9 @@
+package edu.pnu.service;
+
+import edu.pnu.domain.Member;
+
+public interface asdasd {
+
+	Member getMember(Member member);
+
+}

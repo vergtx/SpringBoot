@@ -1,0 +1,10 @@
+package edu.pnu.domain;
+
+public class Member {
+	
+	private String username;
+	private String password;
+	private String role;
+	private boolean enabled;
+
+}

@@ -1,0 +1,7 @@
+package edu.pnu;
+
+import org.springframework.boot.ApplicationRunner;
+
+public interface MemberInitialize extends ApplicationRunner {
+
+}

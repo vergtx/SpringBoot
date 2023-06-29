@@ -1,0 +1,41 @@
+package edu.pnu;
+
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import edu.pnu.domain.Board;
+import edu.pnu.persistence.BoardRepository;
+
+
+@SpringBootTest
+//@TestMethodOrder(OrderAnnotation.class)
+class QueryMethodTest {
+	
+	@Autowired
+	private BoardRepository boardRep;
+	
+	//@Test  
+	public void findByTitleLike() {
+		List<Board> boardList = boardRep.findByTitleLike("%1%");
+		
+		System.out.println("검색결과");
+		for(Board board : boardList) {
+			System.out.println("===============" + board.toString());
+		}
+	}
+	
+	@Test  
+	public void findByTitleContainingAndCntGreaterThanLike() {
+		List<Board> boardList = boardRep.findByTitleContainingAndCntGreaterThanLike("%1%", 50);
+		
+		System.out.println("검색결과");
+		for(Board board : boardList) {
+			System.out.println("===============" + board.toString());
+		}
+	}
+	
+	
+}
