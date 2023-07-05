@@ -1,7 +1,0 @@
-package edu.pnu.config;
-
-import org.springframework.security.core.userdetails.UserDetailsServiceBoardUserDetailsService;
-
-public class BoardUserDetailsService implements UserDetailsServiceBoardUserDetailsService {
-
-}

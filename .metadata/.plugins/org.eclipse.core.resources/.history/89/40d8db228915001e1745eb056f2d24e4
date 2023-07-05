@@ -1,4 +1,0 @@
-spring.datasource.driver-class-name=org.h2.Driver
-spring.datasource.url=jdbc:h2:tcp://localhost/~/Chapter07
-spring.datasource.username=sa
-\spring.datasource.username=abcd

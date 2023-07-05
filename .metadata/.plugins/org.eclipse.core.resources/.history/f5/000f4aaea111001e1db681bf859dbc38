@@ -1,5 +1,0 @@
-package edu.pnu.exception;
-
-public class BoardException extends RuntimeException {
-
-}

@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="ROLE_ADMIN"/>
+		<item key="selection" value="Response"/>
 		<list key="findhistory">
+			<item value="response"/>
+			<item value="authToken"/>
 			<item value="ROLE_ADMIN"/>
 			<item value="id"/>
 			<item value="둘리"/>
@@ -21,8 +23,6 @@
 			<item value="titㅅle"/>
 			<item value="updateBoard"/>
 			<item value="findBoard"/>
-			<item value="findById"/>
-			<item value="getBaord"/>
 		</list>
 		<list key="replacehistory">
 			<item value="도우너"/>
