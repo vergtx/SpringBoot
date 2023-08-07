@@ -6,8 +6,13 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Company "/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="calculateReceivablesTurnoverRatioByStockCodeAndYear"/>
+			<item value="Optional"/>
+			<item value="getFinancialStatementItems"/>
+			<item value="getFinancialStatementByStockCode"/>
+			<item value="financialstatement"/>
 			<item value="Company "/>
 			<item value="findByCompanyName"/>
 			<item value="companyname"/>
@@ -18,11 +23,6 @@
 			<item value="둘리"/>
 			<item value="insertBoard"/>
 			<item value="form"/>
-			<item value="action"/>
-			<item value="getboard"/>
-			<item value="th:align"/>
-			<item value="Content-Ty"/>
-			<item value="tittle"/>
 		</list>
 		<list key="replacehistory">
 			<item value="도우너"/>
