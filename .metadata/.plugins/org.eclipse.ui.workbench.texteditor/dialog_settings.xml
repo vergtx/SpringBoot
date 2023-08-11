@@ -6,23 +6,23 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="jwtTokenProvider"/>
 		<list key="findhistory">
-			<item value="calculateReceivablesTurnoverRatioByStockCodeAndYear"/>
-			<item value="Optional"/>
-			<item value="getFinancialStatementItems"/>
-			<item value="getFinancialStatementByStockCode"/>
-			<item value="financialstatement"/>
-			<item value="Company "/>
-			<item value="findByCompanyName"/>
-			<item value="companyname"/>
-			<item value="response"/>
-			<item value="authToken"/>
-			<item value="ROLE_ADMIN"/>
-			<item value="id"/>
-			<item value="둘리"/>
-			<item value="insertBoard"/>
-			<item value="form"/>
+			<item value="&lt;artifactId&gt;spring-boot-starter-security&lt;/artifactId&gt;"/>
+			<item value="jwtTokenProvider"/>
+			<item value="successfulAuthentication "/>
+			<item value="setFilterProcessesUrl"/>
+			<item value="AuthenticationManager"/>
+			<item value="authentication"/>
+			<item value="//&#x09;@PostMapping(&quot;/login&quot;)"/>
+			<item value="starter"/>
+			<item value="jwtSecret"/>
+			<item value="PasswordEncoder"/>
+			<item value="createPost"/>
+			<item value="재고"/>
+			<item value="secur"/>
+			<item value="SECr"/>
+			<item value="jjwt"/>
 		</list>
 		<list key="replacehistory">
 			<item value="도우너"/>
