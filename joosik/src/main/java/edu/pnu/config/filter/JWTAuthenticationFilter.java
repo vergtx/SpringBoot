@@ -64,12 +64,14 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 			Authentication authResult) throws IOException, ServletException {
 		User user = (User) authResult.getPrincipal();
 		log.info("successfulAuthentication:" + user.toString());
+		
+
 
 		String jwtToken = JWT.create().withClaim("username", user.getUsername())
 				.withExpiresAt(new Date(System.currentTimeMillis() + 1000 * 60 * 30))
 				.sign(Algorithm.HMAC256("edu.pnu.jwtkey"));
 		
-		
+		log.info("Generated JWT Token: " + jwtToken);
 
 		response.addHeader("Authorization", "Bearer " + jwtToken);
 		response.setContentType("application/json");

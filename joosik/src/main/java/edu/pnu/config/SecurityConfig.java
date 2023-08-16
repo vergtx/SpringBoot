@@ -72,7 +72,7 @@ public class SecurityConfig {
 		http.authorizeHttpRequests(security -> { // 여기서 HTTP 요청에 따른 권한별 설정. 자동으로 ROLE_를 넣어서 읽으니 테이블엔 ROLE_ADMIN 이런식으로 넣어
 			//여기에 써준 해당 경로는 인증된 사용자만 접근 가능하도록 설정.
 			security.requestMatchers("/posts/**").authenticated() //인증 통과만 하면 쓸수있음. 즉 로그인 한 사람만 이 URL 사용가능.
-			.requestMatchers("/posts/update/**").hasAnyRole("MANAGER", "ADMIN")			
+			.requestMatchers("/posts/update/**").hasRole("ADMIN")			
 			.requestMatchers("/posts/delete/**").hasRole("ADMIN")
 			.anyRequest().permitAll(); //위에 명시하지 않은, 인증도 안되고 롤도 없는 애들 전부. 이 URL 빼고 다 허용.
 		});

@@ -60,10 +60,6 @@ public class PostServiceImpl implements PostService {
 		postRepository.deleteById(postId);
 	}
 
-	@Override
-	public boolean isPostOwner(Long postId, String username) {
-		Optional<Post> optionalPost = postRepository.findById(postId);
-		return optionalPost.map(post -> post.getWriter().equals(username)).orElse(false);
-	}
+
 
 }

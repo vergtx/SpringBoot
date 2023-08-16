@@ -6,23 +6,23 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="jwtTokenProvider"/>
+		<item key="selection" value="doFilterInternal"/>
 		<list key="findhistory">
-			<item value="&lt;artifactId&gt;spring-boot-starter-security&lt;/artifactId&gt;"/>
+			<item value="doFilterInternal"/>
+			<item value="isPostOwner"/>
+			<item value="createPost"/>
+			<item value="successfulAuthentication"/>
+			<item value="generateJwtToken"/>
+			<item value="memberRepo"/>
+			<item value="do"/>
 			<item value="jwtTokenProvider"/>
+			<item value="JWTAuthorizationFilter"/>
+			<item value="addFilter"/>
+			<item value="&lt;artifactId&gt;spring-boot-starter-security&lt;/artifactId&gt;"/>
 			<item value="successfulAuthentication "/>
 			<item value="setFilterProcessesUrl"/>
 			<item value="AuthenticationManager"/>
 			<item value="authentication"/>
-			<item value="//&#x09;@PostMapping(&quot;/login&quot;)"/>
-			<item value="starter"/>
-			<item value="jwtSecret"/>
-			<item value="PasswordEncoder"/>
-			<item value="createPost"/>
-			<item value="재고"/>
-			<item value="secur"/>
-			<item value="SECr"/>
-			<item value="jjwt"/>
 		</list>
 		<list key="replacehistory">
 			<item value="도우너"/>

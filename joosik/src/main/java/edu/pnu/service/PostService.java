@@ -15,5 +15,7 @@ public interface PostService {
 
 	void deletePost(Long postId);
 	
-	boolean isPostOwner(Long postId, String username);
+	
+	
+	
 }
